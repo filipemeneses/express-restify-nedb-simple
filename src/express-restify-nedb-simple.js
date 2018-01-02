@@ -55,12 +55,7 @@ module.exports = {
   serve (router, nedbDatabase, successFunc) {
     let modelName = nedbDatabase.filename.split('/')
     modelName = modelName[modelName.length - 1]
-    let name = /([a-zA-Z]+).db$/
-    if (!name.test(modelName)) {
-      throw new Error('Invalid path, expected "path/to/model.db"')
-    }
-
-    modelName = modelName.match(name)[1]
+    modelName = modelName.match(/([a-zA-Z]+).db$/)[1]
     router.use(`/${modelName}`, crud(nedbDatabase, successFunc))
   }
 }

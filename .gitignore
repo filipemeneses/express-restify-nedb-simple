@@ -1,2 +1,4 @@
 node_modules
 spec/users.db
+lcov-report
+lcov.info
