@@ -1,5 +1,10 @@
 # express-restify-nedb-simple
 
+
+[![Travis branch](https://img.shields.io/travis/filipemeneses/express-restify-nedb-simple/master.svg)]()
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/filipemeneses/express-restify-nedb-simple.svg)]()
+[![npm](https://img.shields.io/npm/v/express-restify-nedb-simple.svg)]()
+
 Easily create a simple express REST interface for nedb models.
 
 ## Getting started
